@@ -9,7 +9,7 @@ def insert_bst(x, n):
 			return (n[0], insert_bst(x, n[1]), n[2])
 
 	elif x > n[0]:
-		if not n[1]:
+		if not n[2]:
 			return (n[0], n[1], (x, (), ()))
 		else:
 			return (n[0], n[1], insert_bst(x, n[2]))
